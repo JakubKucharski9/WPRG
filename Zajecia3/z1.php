@@ -1,7 +1,7 @@
 <?php
-$liczba1=$_GET['l1'];
-$liczba2=$_GET['l2'];
-$dzialanie=$_GET['d'];
+$liczba1=filter_var($_POST['l1'], FILTER_VALIDATE_INT);
+$liczba2=filter_var($_POST['l2'], FILTER_VALIDATE_INT);
+$dzialanie=$_POST['d'];
 $wynik=0;
 if($dzialanie=='Ddo'){
     $wynik=$liczba1+$liczba2;
