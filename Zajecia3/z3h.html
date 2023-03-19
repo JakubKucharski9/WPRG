@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z3</title>
+</head>
+<body>
+<form action="z3.php" method="POST">
+    <label>Zakres dat, od:</label>
+    <input type="date" name='zakres1' required>
+    <label>, do:</label>
+    <input type="date" name='zakres2' required><br>
+    <label for="los">Liczba osób</label>
+    <input id="los" name='los' required><br>
+    <label for="kraj">Kraj</label>
+    <select id="kraj" name="kraj">
+        <option value="Turcja">Turcja</option>
+        <option value="Bulgaria">Bułgaria</option>
+        <option value="Grecja">Grecja</option>
+        <option value="Maroko">Maroko</option>
+    </select><br>
+    <input type="submit" value="Prześlij">
+</form>
+
+</body>
+</html>
