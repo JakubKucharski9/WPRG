@@ -5,18 +5,18 @@
     <title>z1</title>
 </head>
 <body>
-<FORM action="z1php.php">
+<FORM action="z1php.php" method="get">
     <table>
         <tr>
             <td>Liczba 1:</td>
-            <td><input name="liczba1"></td>
+            <td><input name="liczba1" required></td>
         </tr>
         <tr>
             <td>Liczba 2:</td>
-            <td><input name="liczba2"></td>
+            <td><input name="liczba2" required></td>
         </tr>
             <label for="dzialanie">Wybierz działanie:</label>
-            <select id="dzialanie" name="dzialanie">
+            <select id="dzialanie" name="dzialanie" required>
                 <option value="Dodawanie">Dodawanie</option>
                 <option value="Odejmowanie">Odejmowanie</option>
                 <option value="Mnozenie">Mnożenie</option>

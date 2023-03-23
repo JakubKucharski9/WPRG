@@ -1,3 +1,8 @@
+
+<head>
+<title>z2</title>
+</head>
+
 <?php
 $podStrony=array(
     array('nazwa'=>'Menu', 'link'=>'menu','tresc'=>''),

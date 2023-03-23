@@ -1,6 +1,6 @@
 <?php
-$liczba1=$_GET['liczba1'];
-$liczba2=$_GET['liczba2'];
+$liczba1=(int)$_GET['liczba1'];
+$liczba2=(int)$_GET['liczba2'];
 $dzialanie=$_GET['dzialanie'];
 $wynik=0;
 switch ($dzialanie){

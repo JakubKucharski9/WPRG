@@ -1,7 +1,9 @@
+<head>
+    <title>z4</title>
+</head>
 <?php
 if(isset($_COOKIE['ciastko'])){
     echo "Juz glosowaleś w sondzie!<br>";
-
 }else{
     if(isset($_POST['glos'])) {
         setcookie("ciastko", true, time() + 15);
@@ -15,7 +17,6 @@ if(isset($_COOKIE['ciastko'])){
             <label>Rebelia<input type="radio" name="glos" value="Rebelia"></label><br>
             <input type="submit" value="Prześlij">
             </form>
-
         <?php
     }
 }
