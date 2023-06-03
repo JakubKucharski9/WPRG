@@ -4,6 +4,9 @@
     <title>Szczegóły hotelu</title>
     <style>
 
+        .title{
+            text-align: center;
+        }
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -69,7 +72,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Szczegóły hotelu</h1>
+    <h1 class="title">Szczegóły hotelu</h1>
     <div class="hotel-details">
         <?php
         session_start();
@@ -88,7 +91,7 @@
                 }
 
                 if ($room !== null) {
-                    echo '<h2>'.$room['name'].'</h2>';
+                    echo '<h2 class="title">'.$room['name'].'</h2>';
                     echo '<p>Miasto: '.$room['description'].'</p>';
                     echo '<p>Cena za noc: '.$room['price'].' zł</p>';
                     echo '<p>Powierzchnia: '.$room['area'].' m<sup>2</sup></p>';

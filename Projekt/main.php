@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <title>Wyszukiwarka hoteli</title>
     <style>
 
+        .title{
+            text-align: center;
+        }
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -32,7 +35,7 @@
 
         .hotel-card img {
             max-width: 100%;
-            height: auto;
+            height: 200px;
             margin-bottom: 10px;
             cursor: pointer;
         }
@@ -40,7 +43,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Wyszukiwarka hoteli</h1>
+    <h1 class="title">Wyszukiwarka hoteli</h1>
     <div class="search-results">
         <?php
 
@@ -70,7 +73,7 @@
         if (count($hotels) > 0) {
             foreach ($hotels as $hotel) {
                 echo '<div class="hotel-card">';
-                echo '<h2>'.$hotel["name"].'</h2>';
+                echo '<h2 class="title">'.$hotel["name"].'</h2>';
                 echo '<h3>'.$hotel["description"].'</h3>';
                 echo '<p>Cena za noc: '.$hotel["price"].' zł</p>';
                 echo '<a href="hotel.php?id='.$hotel["id"].'"><img src="'.$hotel["image"].'" alt="'.$hotel["name"].'"></a>';
